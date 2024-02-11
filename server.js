@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('public'));
 
 // Replace with your MongoDB connection string
-const db = 'process.env.MONGODB_URI';
+const db = process.env.MONGODB_URI;
 
 // Connect to MongoDB
 mongoose
