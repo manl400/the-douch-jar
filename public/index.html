@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta viewport="width=device-width, initial-scale=1.0">
     <title>The Douch Jar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Welcome to The Douch Jar!!</h1>
-    <form id="commentForm">
-        <input type="text" id="name" placeholder="Name" required>
-        <textarea id="comment" placeholder="Comment" required></textarea>
-        <button type="submit">Submit to Jar</button>
-    </form>
-    <h2>Comments</h2>
-    <div id="commentsContainer"></div>
-
-    <script src="script.js"></script>
+<body class="bg-background">
+    <div class="container mx-auto text-center py-16">
+        <h1 class="text-5xl font-extrabold text-textcolor mb-6">The Douch Jar</h1>
+        <div class="inline-flex gap-4">
+            <button onclick="window.location.href='login.html'" class="bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200 ease-in-out transform hover:-translate-y-1">
+                Sign In
+            </button>
+            <button onclick="window.location.href='login.html?create=true'" class="bg-secondary hover:bg-secondary-dark text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-200 ease-in-out transform hover:-translate-y-1">
+                Create Account
+            </button>
+        </div>
+    </div>
 </body>
 </html>

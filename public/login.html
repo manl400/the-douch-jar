@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Douch Jar</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Ensure this links to your Tailwind CSS file -->
+</head>
+<body class="bg-background flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md">
+        <form class="shadow-lg rounded-lg overflow-hidden">
+            <div class="px-10 py-8 bg-white">
+                <h1 class="text-2xl font-bold text-center text-textcolor mb-8">Sign In</h1>
+                <div class="mb-4">
+                    <label class="block text-textcolor text-sm font-semibold mb-2" for="username">Username</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-textcolor leading-tight focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="username" type="text" placeholder="Username">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-textcolor text-sm font-semibold mb-2" for="password">Password</label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-textcolor mb-3 leading-tight focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="password" type="password" placeholder="******************">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-4 rounded transition duration-200 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-opacity-50" type="button" onclick="login()">
+                        Sign In
+                    </button>
+                    <a class="inline-block align-baseline font-semibold text-sm hover:text-secondary" href="login.html?create=true" style="color: #669BBC;">
+                        Create an Account
+                    </a>
+                </div>
+            </div>
+            <div class="px-10 py-4 bg-gray-50 text-center text-sm text-textcolor">
+                &copy;2024 The Douch Jar. All rights reserved.
+            </div>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

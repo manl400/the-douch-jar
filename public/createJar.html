@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Jar - The Douch Jar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md">
+        <form class="bg-white shadow-lg rounded-lg overflow-hidden" id="createJarForm">
+            <div class="px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label class="block text-textcolor text-sm font-bold mb-2" for="jarName">
+                        Name of Jar
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-textcolor leading-tight focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="jarName" type="text" placeholder="Jar Name" required>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-textcolor text-sm font-bold mb-2" for="costPerEntry">
+                        Cost for Each Entry ($)
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-textcolor leading-tight focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="costPerEntry" type="number" step="0.01" placeholder="0.00" required>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-opacity-50" type="submit">
+                        Create Jar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/createJar.js"></script>
+</body>
+</html>

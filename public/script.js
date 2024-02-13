@@ -30,6 +30,7 @@ function fetchComments() {
         container.innerHTML = ''; // Clear current comments
         comments.forEach(comment => {
             const div = document.createElement('div');
+            div.className = 'comment';
             div.innerHTML = `<strong>${comment.name}</strong>: ${comment.comment} <em>${new Date(comment.time).toLocaleString()}</em>`;
             container.appendChild(div);
         });

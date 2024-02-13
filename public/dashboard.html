@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Dashboard - The Douch Jar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-background">
+    <div class="container mx-auto p-6">
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-3xl font-extrabold text-textcolor">Dashboard</h1>
+            <button onclick="window.location.href='createJar.html'" class="bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-6 rounded-lg shadow transition duration-200 ease-in-out">
+                + Create New Jar
+            </button>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg">
+            <table class="w-full text-sm text-textcolor">
+                <thead class="text-xs uppercase bg-gray-50">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">Jar Name</th>
+                        <th scope="col" class="py-3 px-6">Entries</th>
+                        <th scope="col" class="py-3 px-6">Cost per Entry</th>
+                        <th scope="col" class="py-3 px-6">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-4 px-6">Example Jar 1</td>
+                        <td class="py-4 px-6">5</td>
+                        <td class="py-4 px-6">$1.00</td>
+                        <td class="py-4 px-6 flex items-center gap-4">
+                            <a href="#" class="text-primary hover:underline">Edit</a>
+                            <a href="#" class="text-red-600 hover:underline">Delete</a>
+                        </td>
+                    </tr>
+                    <!-- Repeat for each Jar -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
